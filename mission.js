@@ -10,24 +10,16 @@ function changeTheme() {
     if (current === 'dark') {
         // code for changes to colors and logo
         // Dark mode styles
-        document.body.style.backgroundColor = "#333";
-        document.body.style.color = "white";
+        document.body.classList.add('dark');
 
-        pageContent.style.backgroundColor = "#1a1a1a";
-        pageContent.style.color = "white";
-
-        logo.src = "images/byui-logo-white.png";
+        logo.setAttribute('src', 'images/byui-logo-white.png');
 
     } else {
         // code for changes to colors and logo
          // Light mode styles
-        document.body.style.backgroundColor = "#ddd";
-        document.body.style.color = "black";
+        document.body.classList.remove('dark');
 
-        pageContent.style.backgroundColor = "white";
-        pageContent.style.color = "black";
-
-        logo.src = "images/BYUIPHOTO.png";
+        logo.setAttribute('src', 'images/byuiphoto.png');
 
     }
 }
