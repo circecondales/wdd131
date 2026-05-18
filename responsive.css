@@ -44,12 +44,28 @@ nav a:hover {
     border: none;
     background-color: transparent;
 }
-.bar1, .bar2, .bar3 { /*3 bars of menu*/
+.bar1, .bar2, .bar3 {
+    /*3barsofmenu*/
     width: 30px;
     height: 4px;
     background-color: black;
     margin: 5px 0;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
 }
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
 footer {
     text-align: center;
 }
@@ -68,6 +84,16 @@ footer {
 
     nav a {
         display: inline;
+        color: black;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        border-top: 1px solid gray;
+
+    }
+
+    .hide {
+        display: none;
     }
     nav {
         text-align: right;
