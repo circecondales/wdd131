@@ -33,6 +33,9 @@ section {
 nav a {
     padding: 20px;
     color: black;
+}
+
+.hide {
     display: none;
 }
 nav a:hover {
