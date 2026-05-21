@@ -1,34 +1,39 @@
 const title = document.querySelector('h1');
+title.textContent = "Web Page Components";
 
-console.log(title);
-
-title.textContent = "Web page components"; //asigna un nombre nuevo al titulo
-
-let topics = document.querySelector("#topics"); //con este query de requiere el #topics
-//topics.style.color = "red"; //ejemplo
-
-document.getElementById("topics").style.color = "purple"; //con este query no se requiere el id del elemento
-
-let list = document.querySelector(".list"); 
-
+// Bordes a la primera lista
+let list = document.querySelector(".list");
 list.style.border = "3px solid black";
 
+// Clase al párrafo
 let para = document.querySelector("p");
+para.classList.add("background");
 
-//para.style.backgroundColor = "lightblue"; //no necesita comando en el css
+// Dropdown
+let selectElem = document.getElementById("webdevlist");
 
-para.classList.add("background"); //debe tener el comando en el css
+// Elementos H2
+const htmlTitle = document.getElementById("html-title");
+const cssTitle = document.getElementById("css-title");
+const jsTitle = document.getElementById("js-title");
 
-//document.querySelector("body").classList.add("background"); //cambia el fondo a negro
+selectElem.addEventListener("change", function () {
 
-const image = document.querySelector("img");
+    // Reiniciar colores
+    htmlTitle.style.color = "black";
+    cssTitle.style.color = "black";
+    jsTitle.style.color = "black";
 
-image.setAttribute("src", "mission/imagesnew.jpg"); //cambia la imagen a una nueva
+    // Cambiar según selección
+    if (selectElem.value === "html") {
+        htmlTitle.style.color = "red";
+    }
 
+    if (selectElem.value === "css") {
+        cssTitle.style.color = "blue";
+    }
 
-let selectElem = document.getElementById('webdevlist');
-selectElem.addEventListener('change', function(){
-    let codeValue = selectElem.value;
-    console.log(codeValue);
-    document.getElementById(codeValue).style.color = "blue";
-})
+    if (selectElem.value === "js") {
+        jsTitle.style.color = "gold";
+    }
+});
