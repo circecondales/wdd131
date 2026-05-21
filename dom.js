@@ -12,7 +12,7 @@ para.classList.add("background");
 // Dropdown
 let selectElem = document.getElementById("webdevlist");
 
-// Elementos H2
+// Elementos H2 updated
 const htmlTitle = document.getElementById("html-title");
 const cssTitle = document.getElementById("css-title");
 const jsTitle = document.getElementById("js-title");
@@ -34,6 +34,6 @@ selectElem.addEventListener("change", function () {
     }
 
     if (selectElem.value === "js") {
-        jsTitle.style.color = "gold";
+        jsTitle.style.color = "purple";
     }
 });
