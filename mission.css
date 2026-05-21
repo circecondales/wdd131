@@ -11,6 +11,15 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 5px solid #1a3a5f;
+    /* Elimina los márgenes predeterminados del navegador */
+    margin: 0;
+    /* Asegura que el borde estire hasta el fondo de la pantalla */
+    min-height: 100vh;
+    /* Evita que el borde cree barras de desplazamiento no deseadas */
+    box-sizing: border-box;
+    /* Opcional: añade espacio entre el borde y tu contenido */
+    padding: 20px;
 }
 
 body.dark {
@@ -18,9 +27,13 @@ body.dark {
     color:#ddd
 }
 
-bodi.dark #content {
+body.dark #content {
     background-color: #1a1a1a;
     color: white;
+}
+
+body.dark .texto {
+    color: #ddd;
 }
 
 #content{
@@ -31,17 +44,16 @@ bodi.dark #content {
     background-color: white;
     color: #0a0a0a;
 }
-p{
+.texto{
     color: #0a0a0a;
-    font-size: 0.5em;
+    font-size: 1.0em;
 }
 
 h1{
     text-align: center;
     text-transform: uppercase;
-    font-size: 2.0em;
+    font-size: 1.8em;
     font-weight: normal;
-    margin-bottom: 20px;
     padding-bottom: 15px;
     border-bottom: 1px solid #ddd;
 }
@@ -49,7 +61,7 @@ h1{
 h2{
     text-align: center;
     text-transform: uppercase;
-    font-size: 0.5em;
+    font-size: 0.6em;
     margin-bottom: 20px;
     color: rgb(0, 110, 255);
 }
@@ -59,6 +71,7 @@ h1, h2{
 
 p{
     margin-bottom: 20px;
+    font-size: 1.3em;
 }
 img{
     width: 20%;
@@ -73,6 +86,6 @@ h4{
     margin-bottom: 1.5rem;
 }
 
-.list{
+ol.list{
     list-style-type: none;
 }
