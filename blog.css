@@ -5,14 +5,15 @@ body {
     line-height: 1.6;
 }
 header, footer {
-    background-color: #222;
-    color: white;
+    background-color: white;
+    color: black;
     padding: 1rem;
     text-align: center;
 }
 .main-nav {
     list-style: none;
     padding: 0;
+    text-align: right;
 }
 .main-nav li {
     padding: 8px;
@@ -40,6 +41,7 @@ header, footer {
 .blog p {
     margin-top: 15px;
     font-size: 1rem;
+    text-align: right;
 }
 .blog img {
     max-width: 100%;
