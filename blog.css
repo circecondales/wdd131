@@ -14,11 +14,11 @@ header, footer {
     list-style: none;
     padding: 0;
     text-align: right;
-    display: flex; 
-    
+    display: flex; /* 1. Activamos Flexbox para alinearlos en fila */
+
     /* 2. Centramos los elementos horizontalmente (puedes cambiarlo a flex-end si los quieres a la derecha) */
-    justify-content: right; 
-    
+    justify-content: right;
+
     /* 3. Evitamos que se amontonen si la pantalla es extremadamente pequeña */
     flex-wrap: wrap;
 
@@ -69,8 +69,11 @@ header, footer {
     }
     .blog {
         display: grid;
-        grid-template-columns: 1fr;
-        justify-content: right;
+        grid-template-columns: 200px 1fr;
+        gap: 30px;
+        /*justify-content: right;*/
+        max-width: 900px; /* Ampliamos el ancho para que luzca mejor en escritorio */
+        align-items: start;
     }
     .blog img {
         grid-row: 1/6;
