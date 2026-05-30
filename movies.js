@@ -58,15 +58,3 @@ const movies = [
         article.innerHTML = html;
         movieList.appendChild(article);
     });
-
-
-
-        {/* <article class="movie">
-            <h2>The Other Side of Heaven</h2>
-            <img src="https://wddbyui.github.io/wdd131/images/heaven.png" alt="A young couple and missionaries in a row boat on the ocean">
-            <p><strong>Release Date:</strong> December 14, 2001</p>
-            <p><strong>Recommended Age:</strong> 10+</p>
-            <p><strong>Genre:</strong> Drama/Religious</p>
-            <p><strong>Rating:</strong> <span aria-label="4 of 5 stars" role="img">⭐⭐⭐⭐</span></p>
-            <p id='desc'>Based on the true story of Elder John H. Groberg, a missionary in Tonga in the 1950s, this film tells a powerful story of faith, hardship, and miracles.</p>
-        </article> */}
