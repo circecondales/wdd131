@@ -118,6 +118,11 @@ dialog img {
     .viewer img {
         max-width: 800px;
     }
+dialog { /*AL HACER CLICK EN LA FOTO EL POPUP SE MUESTRA COMPLETO*/
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
 
 /* TABLET VIEW */
 
