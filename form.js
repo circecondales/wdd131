@@ -1,13 +1,13 @@
 
-const form = document.querySelector("#fsyForm");
-const travelRange = document.querySelector("#travelRange");
+const form = document.querySelector("#eventForm");
+const typeRange = document.querySelector("#typeRange");
 const notesContainer = document.querySelector("#notesContainer");
 const notes = document.querySelector("#notes");
 const output = document.querySelector("#output");
 const campusBoxes = document.querySelectorAll('input[name="campus"]');
 
 function updateNotesField() {
-  const value = travelRange.value;
+  const value = typeRange.value;
 
   // Show the travel notes on the form if they are choosing many campuses and require it
   if (value === "many") {
@@ -49,15 +49,7 @@ form.addEventListener("submit", function (event) {
   const selectedCampuses = getSelectedCampuses();
   const note = form.notes.value.trim();
 
-  // Validate the input
-  // Let the user know to select at least one campus
 
-  
-  // Let the user know if they choose many campuses but didn't put a note that they need to add a note
-
-  
-  //Let the user know if they choose many campus but only had one campus selected that they need to choose at least two campuses
-    // Validate the input
   // Let the user know to select at least one campus
   if (selectedCampuses.length === 0) {
     output.textContent = "Please select at least one campus.";
