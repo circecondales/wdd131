@@ -13,6 +13,9 @@ function updateNotesField() {
   if (value === "many") {
     notesContainer.hidden = false;
     notes.required = true;
+  }else {
+    notesContainer.hidden = true;
+    notes.required = false;
   }
 }
 
