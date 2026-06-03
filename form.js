@@ -57,7 +57,24 @@ form.addEventListener("submit", function (event) {
 
   
   //Let the user know if they choose many campus but only had one campus selected that they need to choose at least two campuses
-  
+    // Validate the input
+  // Let the user know to select at least one campus
+  if (selectedCampuses.length === 0) {
+    output.textContent = "Please select at least one campus.";
+    return;
+  }
+
+  // Let the user know if they choose many campuses but didn't put a note that they need to add a note
+  if (type === "many" && note === "") {
+    output.textContent = "Please explain your travel preferences in the notes field.";
+    return;
+  }
+
+  // Let the user know if they choose many campus but only had one campus selected that they need to choose at least two campuses
+  if (type === "many" && selectedCampuses.length < 2) {
+    output.textContent = "Please select at least two campuses when choosing 'many campuses'.";
+    return;
+  }
 
   if (isPastDate(availableDate)) {
     output.textContent = "Please choose a later date.";
