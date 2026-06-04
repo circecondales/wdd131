@@ -52,7 +52,12 @@ form.addEventListener("submit", function (event) {
 
   // Student validation
   if (type === "student-id") {
-    if (!/^\d{9}$/.test(note)) {
+    if (!/^\d{9}$/.test(note)) {  
+      //Símbolo	Significado
+        //^	Inicio
+        // \d	Dígito
+        // {9}	Exactamente 9
+        // $	Fin
       errors.push("Student I# must be 9 digits.");
     }
   }
