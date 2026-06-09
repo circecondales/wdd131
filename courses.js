@@ -54,3 +54,6 @@ document.querySelector("#enrollStudent").addEventListener("click", function () {
     const sectionNum = document.querySelector("#sectionNumber").value;
     aCourse.enrollStudent(sectionNum);
 });
+
+
+//return `...` Las comillas invertidas (`) indican que se está usando un template literal. Esto permite escribir texto en múltiples líneas y, lo más importante, interpolar variables directamente dentro de la cadena de texto sin necesidad de andar concatenando con el signo +.//
