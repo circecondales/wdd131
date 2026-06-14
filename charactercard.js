@@ -6,7 +6,7 @@ const character = {
     health: 100,
     image: "images/snortleblat.png",
 
-    attacked: function () {
+    attackBtn: function () {
         this.health -= 20;
 
         if (this.health <= 0) {
@@ -39,7 +39,7 @@ renderCharacter();
 
 // Event Listeners
 document.querySelector("#attackBtn").addEventListener("click", function () {
-    character.attacked();
+    character.attackBtn();
 });
 
 document.querySelector("#levelBtn").addEventListener("click", function () {
