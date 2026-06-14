@@ -1,13 +1,13 @@
 
-const form = document.querySelector("#eventForm");
-const typeRange = document.querySelector("#typeRange");
+const form = document.querySelector("#fsyForm");
+const travelRange = document.querySelector("#travelRange");
 const notesContainer = document.querySelector("#notesContainer");
 const notes = document.querySelector("#notes");
 const output = document.querySelector("#output");
 const campusBoxes = document.querySelectorAll('input[name="campus"]');
 
 function updateNotesField() {
-  const value = typeRange.value;
+  const value = travelRange.value;
 
   // Show the travel notes on the form if they are choosing many campuses and require it
   if (value === "many") {
@@ -34,7 +34,7 @@ function getSelectedCampuses() {
   //.from converts a NodeList into a real array, so then you can use .filter and .map
   return Array.from(campusBoxes)
     .filter(box => box.checked)
-    .map(box => box.value); 
+    .map(box => box.value);
 }
 
 form.addEventListener("submit", function (event) {
@@ -57,7 +57,7 @@ form.addEventListener("submit", function (event) {
   }
 
   // Let the user know if they choose many campuses but didn't put a note that they need to add a note
-  if (type === "many" && note === "") {
+  if (type === "many" && !note) {
     output.textContent = "Please explain your travel preferences in the notes field.";
     return;
   }
@@ -72,6 +72,7 @@ form.addEventListener("submit", function (event) {
     output.textContent = "Please choose a later date.";
     return;
   }
+
 
   output.innerHTML = `
   <h2>Preference Submitted</h2>
