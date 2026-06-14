@@ -7,7 +7,7 @@ const character = {
     image: "images/snortleblat.png",
 
     attackBtn: function () {
-        this.health -= 20;
+        this.health = this.health - 20;
 
         if (this.health <= 0) {
             this.health = 0;
