@@ -10,8 +10,8 @@ const character = {
         this.health = this.health - 20;
 
         if (this.health <= 0) {
-            this.health = 0;
-            alert(`${this.name} has died!`);
+            this.health = 0;  //Evitar valores negativos, Si la vida quedó en un número negativo, se corrige a 0.
+            alert(`${this.name} has died!`); //alert() abre una ventana emergente en el navegador.
         }
 
         renderCharacter();
