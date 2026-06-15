@@ -14,12 +14,12 @@ const character = {
             alert(`${this.name} has died!`); //alert() abre una ventana emergente en el navegador.
         }
 
-        renderCharacter();
+        renderCharacter(); //actualizar lo que el jugador ve en la pantalla (la interfaz gráfica). Al ejecutarse, redibuja el personaje o su tarjeta de estadísticas para que el usuario pueda ver reflejado su nuevo nivel de forma visual.
     },
 
     levelUp: function () {
         this.level++;
-        renderCharacter();
+        renderCharacter();  //actualizar lo que el jugador ve en la pantalla (la interfaz gráfica). Al ejecutarse, redibuja el personaje o su tarjeta de estadísticas para que el usuario pueda ver reflejado su nuevo nivel de forma visual.
     }
 };
 
