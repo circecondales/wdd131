@@ -167,6 +167,10 @@ footer {
         display: none; /* The description disappears on mobile */
     }
 
+    /*.social img {
+        display: center;
+}*/
+
     footer {
         flex-direction: column;
         text-align: center;
