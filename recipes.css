@@ -87,10 +87,8 @@ h2 {
 .recipe-card {
     display: flex;
     gap: 1rem;
-
     border: 1px solid #444;
     border-radius: 8px;
-
     padding: 1rem;
     background: white;
 }
@@ -108,10 +106,8 @@ h2 {
 
 .tag {
     align-self: flex-start;
-
     border: 1px solid #999;
     border-radius: 4px;
-
     padding: 0.35rem 0.75rem;
     background: #efefef;
 }
@@ -131,7 +127,6 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     margin-top: 2rem;
     gap: 1rem;
 }
