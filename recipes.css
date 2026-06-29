@@ -167,6 +167,19 @@ footer {
         display: none; /* The description disappears on mobile */
     }
 
+    footer {
+    display: flex;
+    flex-direction: column;
+    }
+
+    .social {
+        order: 1;
+    }
+
+    footer > a {
+        order: 2;
+    }
+
     /*.social img {
         display: center;
 }*/

@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Circe Condales">
+    <meta name="description" content="Browse delicious recipes, from desserts to healthy meals, in this easy-to-use Recipe Book.">
     <title>Recipe Book</title>
 
     <!-- Google Font -->
@@ -28,7 +30,7 @@
     <meta name="twitter:image" content="social-preview-image.png">
 
     <!-- One favicon (ICO works everywhere) -->
-    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="images/event.ico">
 
     <!-- One Apple Touch Icon (iOS home screen) -->
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
@@ -41,19 +43,19 @@
         >
         <h1>RecipeBook</h1>
     </header>
+    <nav>
+        <section class="search-section">
+            <input
+                type="text"
+                placeholder="Find a recipe"
+                aria-label="Search recipes"
+            >
 
-    <section class="search-section">
-        <input
-            type="text"
-            placeholder="Find a recipe"
-            aria-label="Search recipes"
-        >
-
-        <button aria-label="Search">
-            <img src="images/search.svg" alt="">
-        </button>
-    </section>
-
+            <button aria-label="Search">
+                <img src="images/search.svg" alt="">
+            </button>
+        </section>
+    </nav>
     <main>
 
         <article class="recipe-card">
@@ -95,39 +97,28 @@
 
     <footer>
 
+        <div class="social">
+
+            <a class="social-icon" href="#">
+                <img src="images/instagram_icon.svg" alt="instagram icon">
+            </a>
+
+            <a href="#">
+                <img src="images/youtube_icon.svg" alt="youtube icon">
+            </a>
+
+            <a href="#">
+                <img src="images/pinterest_icon.svg" alt="pinterest icon">
+            </a>
+
+        </div>
+
         <a
             href="https://www.flaticon.com/free-icons/recipe"
             title="recipe icons"
         >
             Recipe icons created by Freepik - Flaticon
         </a>
-
-        <div class="social">
-
-            <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates -->
-
-            <a class="social-icon" href="#">
-                <img
-                    src="images/instagram_icon.svg"
-                    alt="instagram icon"
-                >
-            </a>
-
-            <a href="#">
-                <img
-                    src="images/youtube_icon.svg"
-                    alt="youtube icon"
-                >
-            </a>
-
-            <a href="#">
-                <img
-                    src="images/pinterest_icon.svg"
-                    alt="pinterest icon"
-                >
-            </a>
-
-        </div>
 
     </footer>
 
