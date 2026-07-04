@@ -7,6 +7,7 @@
     <meta name="author" content="Circe Condales">
     <meta name="description" content="Browse delicious recipes, from desserts to healthy meals, in this easy-to-use Recipe Book.">
     <title>Recipe Book</title>
+    <script defer src="recipes.js"></script>
 
     <!-- Google Font -->
     <link
@@ -46,29 +47,30 @@
     <nav>
         <section class="search-section">
             <input
+                id="search"
                 type="text"
                 placeholder="Find a recipe"
                 aria-label="Search recipes"
             >
 
-            <button aria-label="Search">
+            <button id="searchBtn" aria-label="Search">
                 <img src="images/search.svg" alt="">
             </button>
         </section>
     </nav>
-    <main>
+    <main id="recipe-container"> <!-- Como JavaScript genera las recetas, el main debe comenzar vacío.-->
 
-        <article class="recipe-card">
+        <!--<article class="recipe-card"> -->
 
-            <img
+            <!-- <img
                 src="images/apple-crisp.jpg"
                 alt="Apple Crisp dessert"
                 class="recipe-image"
-            >
+            > -->
 
-            <div class="recipe-info">
+            <!-- <div class="recipe-info"> -->
 
-                <span class="tag">dessert</span>
+                <!-- <span class="tag">dessert</span>
 
                 <h2>Apple Crisp</h2>
 
@@ -91,7 +93,7 @@
 
             </div>
 
-        </article>
+        </article>-->
 
     </main>
 

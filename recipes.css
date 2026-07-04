@@ -95,6 +95,7 @@ h2 {
 .recipe-image {
     width: 300px;
     object-fit: cover;
+
 }
 
 .recipe-info {
@@ -161,6 +162,7 @@ footer {
 
     .recipe-image {
         width: 100%;
+
     }
 
     .description {
