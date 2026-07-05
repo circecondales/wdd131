@@ -336,17 +336,19 @@ function ratingTemplate(rating) {
   }
 
 function recipeTemplate(recipe) {
-    return `<div class="recipe-card">
-  <div class="recipe-content">
-    <img src="${recipe.image}" alt="${recipe.name}" class="recipe-image">
+    return `
+		<article class="recipe-card">
+			<img src="${recipe.image}" alt="${recipe.name}" class="recipe-image">
+		<div class="recipe-info">
+			<div class="recipe-tags">
+		${tagTemplate(recipe.tags)}
+		</div>
     <h2>${recipe.name}</h2>
-    <div class="recipe-tags">
-      ${tagTemplate(recipe.tags)}
-    </div>
-    <p>${recipe.description}</p>
-    <p>${ratingTemplate(recipe.rating)}</p>
-  </div>
-</div>`
+
+		<p>${recipe.description}</p>
+		<p>${ratingTemplate(recipe.rating)}</p>
+  	</div>
+</article>`;
 }
 
 function renderRecipe(recipe) {
