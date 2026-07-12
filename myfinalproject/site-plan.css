@@ -1,0 +1,147 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+:root{
+    --primary:#EECD86;
+    --secondary:#F39200;
+    --accent:#662483;
+    --dark:#381D2A;
+    --light:#F8F8F8;
+    --white:#FFFFFF;
+    --shadow:0 4px 12px rgba(0,0,0,.15);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Roboto',sans-serif;
+    background:var(--light);
+    color:#333;
+    line-height:1.6;
+}
+
+header{
+    background:var(--primary);
+    color:#662483;
+    text-align:center;
+    padding:2rem;
+}
+
+header h1{
+    font-size:2.5rem;
+    margin-bottom:.5rem;
+}
+
+header h2,
+header h3{
+    font-weight:400;
+}
+
+main{
+    width:min(1000px,90%);
+    margin:2rem auto;
+}
+
+section{
+    background:white;
+    margin-bottom:2rem;
+    padding:2rem;
+    border-radius:10px;
+    box-shadow:var(--shadow);
+}
+
+section h2{
+    color:var(--primary);
+    margin-bottom:1rem;
+    border-bottom:3px solid var(--secondary);
+    padding-bottom:.5rem;
+}
+
+h3{
+    color:var(--accent);
+    margin-top:1rem;
+    margin-bottom:.5rem;
+}
+
+p{
+    margin-bottom:1rem;
+}
+
+img{
+    display:block;
+    max-width:250px;
+    margin:1rem auto;
+}
+
+a{
+    color:var(--primary);
+    text-decoration:none;
+    font-weight:bold;
+}
+
+a:hover{
+    color:var(--accent);
+}
+
+.colors{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:1rem;
+}
+
+.colors th,
+.colors td{
+    border:1px solid #ccc;
+    padding:1rem;
+    text-align:center;
+}
+
+.primary{
+    background:#EECD86;
+    color:rgb(37, 1, 1);
+}
+
+.secondary{
+    background:#F39200;
+}
+
+.accent1{
+    background:#662483;
+    color:white;
+}
+
+.accent2{
+    background:#FFFFFF;
+    color:rgb(10, 0, 0);
+}
+
+footer{
+    background:#662483;
+    color:white;
+    text-align:center;
+    padding:1.5rem;
+    margin-top:2rem;
+}
+
+@media (max-width:768px){
+
+    header h1{
+        font-size:2rem;
+    }
+
+    main{
+        width:95%;
+    }
+
+    section{
+        padding:1.5rem;
+    }
+
+    table{
+        font-size:.9rem;
+    }
+}
