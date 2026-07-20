@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Contact Circe's Design to request professional website maintenance services.">
+
+    <meta name="author" content="Circe Condales">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Circe's Design</title>
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+
+    <meta property="og:title" content="Contact Circe's Design">
+
+    <meta property="og:description" content="Get in touch to discuss your website maintenance needs.">
+
+    <meta property="og:url" content="https://yourgithubusername.github.io/wdd131/final-project/contact.html">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="twitter:title" content="Contact Circe's Design">
+
+    <meta name="twitter:description" content="Contact us for website maintenance services.">
+
+    <meta name="twitter:image" content="https://yourgithubusername.github.io/wdd131/final-project/images/social-preview.png">
+
+    <!-- Icons -->
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="contact.css">
+    <script src="contact.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <img src="logo_circe_sin_nombre-removebg-preview.png" 
+             alt="Circe's Design Logo"
+             class="logo">
+        <h2>Circe's Design</h2>
+
+        <ul class="nav-links">
+            <li><a href="mantenimientoweb.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<section class="contact-header">
+    <h1>Contact Us</h1>
+
+    <p>
+        Ready to keep your website secure and up to date?
+        Complete the form below and we'll contact you soon.
+    </p>
+</section>
+
+<section class="contact-container">
+
+<div class="contact-info">
+
+<h2>Contact Information</h2>
+
+<p><strong>Email:</strong> info@circesdesign.com</p>
+
+<p><strong>Phone:</strong> (555) 123-4567</p>
+
+<p><strong>Hours:</strong> Monday–Friday, 9:00 AM – 5:00 PM</p>
+
+</div>
+
+
+<form id="contactForm" class="contact-form">
+
+<label for="name">Full Name</label>
+<input
+type="text"
+id="name"
+required>
+
+<label for="email">Email</label>
+<input
+type="email"
+id="email"
+required>
+
+<label for="website">Website URL</label>
+<input
+type="url"
+id="website">
+
+<label for="plan">Maintenance Plan</label>
+
+<select id="plan">
+
+<option value="">Select a Plan</option>
+
+<option>Basic</option>
+
+<option>Business</option>
+
+<option>Premium</option>
+
+</select>
+
+<label for="message">Message</label>
+
+<textarea
+id="message"
+rows="6"
+required></textarea>
+
+<button type="submit">
+
+Send Message
+
+</button>
+
+<p id="formMessage"></p>
+
+</form>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>
+
+&copy;
+<span id="year"></span>
+
+Circe's Design
+
+</p>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Browse our website maintenance plans and choose the package that best fits your website.">
+
+    <meta name="author" content="Circe Condales">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Services | Circe's Design</title>
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+
+    <meta property="og:title" content="Website Maintenance Plans">
+
+    <meta property="og:description" content="Compare our Basic, Business, and Premium website maintenance plans.">
+
+    <meta property="og:url" content="https://yourgithubusername.github.io/wdd131/final-project/services.html">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="twitter:title" content="Website Maintenance Plans">
+
+    <meta name="twitter:description" content="Find the perfect website maintenance package for your needs.">
+
+    <meta name="twitter:image" content="https://yourgithubusername.github.io/wdd131/final-project/images/social-preview.png">
+
+    <!-- Icons -->
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="services.css">
+    <script src="services.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <img src="logo_circe_sin_nombre-removebg-preview.png" 
+             alt="Circe's Design Logo"
+             class="logo">
+        <h2>Circe's Design</h2>
+
+        <ul class="nav-links">
+            <li><a href="mantenimientoweb.html">Home</a></li>
+            <li><a href="services.html" class="active">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<section class="page-title">
+    <h1>Website Maintenance Plans</h1>
+    <p>Choose the maintenance plan that best fits your website.</p>
+</section>
+
+<section class="filters">
+
+    <input
+        type="text"
+        id="search"
+        placeholder="Search plans..."
+    >
+
+    <select id="typeFilter">
+        <option value="All">All Types</option>
+        <option value="Personal">Personal</option>
+        <option value="Business">Business</option>
+        <option value="E-commerce">E-commerce</option>
+    </select>
+
+    <select id="priceFilter">
+        <option value="All">All Prices</option>
+        <option value="50">Under $50</option>
+        <option value="100">$50 - $100</option>
+        <option value="101">Above $100</option>
+    </select>
+
+</section>
+
+<section id="plansContainer" class="plans-grid">
+
+</section>
+
+</main>
+
+<div id="modal" class="modal hidden">
+
+    <div class="modal-content">
+
+        <span id="closeModal">&times;</span>
+
+        <h2 id="modalTitle"></h2>
+
+        <p id="modalDescription"></p>
+
+        <ul id="modalServices"></ul>
+
+        <h3 id="modalPrice"></h3>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>&copy; <span id="year"></span> Circe's Design</p>
+</footer>
+
+</body>
+</html>
