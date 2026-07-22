@@ -1,4 +1,4 @@
-// Footer Year
+// ChatGPT I fixed most of the mistakes contact form
 
 document.querySelector("#year").textContent =
 new Date().getFullYear();

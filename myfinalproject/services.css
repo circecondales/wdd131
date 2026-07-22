@@ -1,11 +1,8 @@
-/* ==========================
-   Google Font
-========================== */
+/*AI ChatGPT, adjust the footer, body and headers */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
-/* ==========================
-   Variables
-========================== */
+
 :root {
     --primary: #EECD86;
     --secondary: #F39200;
@@ -15,9 +12,7 @@
     --light: #f8f8f8;
 }
 
-/* ==========================
-   Reset
-========================== */
+/*    Reset */
 * {
     margin: 0;
     padding: 0;
@@ -55,9 +50,7 @@ p {
     margin-bottom: 1rem;
 }
 
-/* ==========================
-   Navigation
-========================== */
+/*  Navigation*/
 
 .navbar {
     background: #EECD86;
@@ -89,9 +82,7 @@ p {
     color: #F39200;
 }
 
-/* ==========================
-   Hero
-========================== */
+/*    Hero */
 
 .hero {
     background: var(--primary);
@@ -124,9 +115,7 @@ p {
     background: var(--accent);
 }
 
-/* ==========================
-   Cards
-========================== */
+/*    Cards */
 
 .plans-grid,
 .plan-container {
@@ -168,9 +157,7 @@ p {
     background: var(--accent);
 }
 
-/* ==========================
-   Filters
-========================== */
+/*  Filters*/
 
 .filters {
     display: flex;
@@ -188,9 +175,7 @@ p {
     font-family: inherit;
 }
 
-/* ==========================
-   Modal
-========================== */
+/* Modal*/
 
 .modal {
     position: fixed;
@@ -227,9 +212,7 @@ p {
     padding-left: 1.5rem;
 }
 
-/* ==========================
-   Contact Form
-========================== */
+/* Contact Form*/
 
 .contact-form {
     display: grid;
@@ -275,9 +258,7 @@ p {
     font-weight: bold;
 }
 
-/* ==========================
-   Footer
-========================== */
+/* Footer*/
 
 footer {
     background: var(--accent);
@@ -287,9 +268,7 @@ footer {
     margin-top: 3rem;
 }
 
-/* ==========================
-   Responsive
-========================== */
+/*Responsive*/
 
 @media (max-width: 768px) {
 

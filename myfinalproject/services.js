@@ -1,3 +1,4 @@
+//ChatGPT, I fixed most of the mistakes to display plans, modal and object.
 const plans = [
     {
         id: 1,

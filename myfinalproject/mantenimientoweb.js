@@ -6,7 +6,6 @@ year.textContent = new Date().getFullYear();
 
 
 
-
 // Mobile Menu
 
 const menuButton = document.querySelector("#menu-button");
