@@ -72,16 +72,20 @@ main{
 }
 
 
-
-
 #menu-button {
 
     display: none;
 
 }
 
+#nav-menu a:hover
+{
+    color: #F39200;
+}
 
-
+#nav-menu .active {
+    color: #F39200;
+}
 /* Hero */
 
 
